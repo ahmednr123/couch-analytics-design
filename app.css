@@ -1,0 +1,356 @@
+@font-face {
+    font-family: 'satoshi-regular';
+    src: url('./fonts/satoshi/Satoshi-Regular.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'satoshi-bold';
+    src: url('./fonts/satoshi/Satoshi-Bold.otf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'satoshi-bolder';
+    src: url('./fonts/satoshi/Satoshi-Black.otf');
+    font-weight: bolder;
+}
+
+* {
+    font-family: 'satoshi-regular';
+}
+
+body {
+    margin: 0px auto;
+    max-width: 1400px;
+    width: calc(100% - 200px);
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-container > img {
+    height: 30px;
+}
+
+.nav-bar {
+    list-style-type: none;
+    display: flex;
+    margin: 5px 0px;
+}
+
+.nav-bar > li {
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-bar > li > span {
+    margin-left: 5px;
+    margin-right: 3px;
+}
+
+.nav-bar > li.selected > span {
+    font-weight: bold;
+}
+
+.nav-bar > li.selected > svg {
+    stroke-width: 2;
+}
+
+.nav-bar-left {
+    display: flex;
+}
+
+.nav-bar-right {
+    display: flex;
+}
+
+.profile {
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-left: 15px;
+}
+
+.profile > img {
+    width: 35px;
+}
+
+.notification-container {
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    float: left;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+footer > div > span {
+    position: relative;
+    margin-left: 20px;
+}
+
+footer > div > span:first-child {
+    margin-left: 0px;
+}
+
+footer > div > span:first-child::before {
+    width: 0px;
+    height: 0px;
+}
+
+footer > div > span::before {
+    content: "";
+    width: 2px;
+    height: 2px;
+    background: gray;
+    position: absolute;
+    left: -12px;
+    top: 9px;
+}
+
+.backdrop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(4px);
+    top: 0;
+    left: 0;
+}
+
+.modal {
+    position: absolute;
+    width: 600px;
+    top: 50px;
+    left: calc(50% - 300px);
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+.modal-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.modal-title > span {
+    font-family: 'satoshi-bold';
+    font-weight: bold;
+}
+
+.modal-section {
+    padding: 10px 10px 10px 10px;
+}
+
+.modal-section > div {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: calc(100% - 18px);
+    padding: 8px;
+    border: 1px solid lightgray;
+}
+
+textarea {
+    width: calc(100% - 18px);
+    padding: 8px;
+    border: 1px solid lightgray;
+}
+
+button {
+    color: white;
+    border: 1px solid rgb(45, 121, 209);
+    background: rgb(34, 91, 156);
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(45, 121, 209);
+}
+
+button.hollow-button {
+    border: 1px solid gray;
+    background: rgba(0,0,0,0);
+    color: black;
+}
+
+button.hollow-button.danger {
+    border: 1px solid darkred;
+    color: darkred;
+}
+
+button.hollow-button.danger:hover {
+    background-color: rgb(255, 228, 228);
+}
+
+button.full-button {
+    width: 100%;
+}
+
+button.hollow-button:hover {
+    background: lightgray;
+}
+
+label {
+    font-size: 14px;
+    font-family: 'satoshi-bold';
+    font-weight: bold;
+    color: gray;
+}
+
+select {
+    background: white;
+    border: 1px solid lightgray;
+    padding: 8px;
+    width: 100%;
+}
+
+input[type="date"] {
+    border: 1px solid lightgray;
+    width: calc(100% - 14px);
+    padding: 6px;
+}
+
+.feedback-btn {
+    padding: 3px 10px;
+    border: 1px solid lightgray;
+    margin-right: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.feedback-btn:hover {
+    background-color: lavender;
+}
+
+.feedback-container {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.feedback-container > svg {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.page-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.page-title {
+    font-weight: bold;
+    font-family: 'satoshi-bold';
+}
+
+.end-container {
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 30px;
+}
+
+.end-container > div {
+    display: flex;
+}
+
+.end-container > div > div {
+    padding: 8px 10px 0px 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.end-container > div > div.selected {
+    font-weight: bolder;
+    font-family: 'satoshi-bolder';
+    background-color: rgb(34, 91, 156);
+    color: white;
+    border-radius: 3px;
+    cursor: auto;
+}
+
+.burger-container {
+    display: none;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.nav-bar-mobile {
+    display: none;
+    flex-direction: column;
+}
+
+.burger-close-icon {
+    display: none;
+}
+
+@media (max-width: 1050px) {
+    body {
+        margin: 0px 10px;
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .feedback-btn {
+        display: none;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    .burger-container {
+        display: flex;
+    }
+
+    .nav-bar-mobile {
+        display: flex;
+    }
+
+    .burger-icon {
+        display: none;
+    }
+
+    .burger-close-icon {
+        display: block;
+    }
+}
+
+@media (max-width: 720px) {
+    .nav-bar-mobile > .nav-bar {
+        flex-direction: column;
+    }
+    .nav-bar-mobile > .nav-bar > li {
+        margin-bottom: 10px;
+    }
+    .nav-bar-mobile > .nav-bar {
+        padding-left: 30px;
+    }
+}

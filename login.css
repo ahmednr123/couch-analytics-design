@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 300px;
+    margin: 60px auto;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo-container > img {
+    height: 60px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+
+.card-section {
+    padding: 20px;
+}
+
+.card-section-dual {
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    margin: 0 auto;
+}
+
+.card-section-dual > div {
+    display: flex;
+    border: 1px solid lightgray;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.card-section-dual > div:hover {
+    background-color: lavender;
+}
+
+.card-section-dual > div > svg {
+    margin-right: 10px;
+}
+
+.heading {
+    font-weight: bold;
+    text-align: center;
+    font-family: 'satoshi-bold';
+    margin-bottom: 40px;
+}
+
+.form-section {
+    margin-bottom: 10px;
+}
+
+.form-section-center {
+    text-align: center;
+}

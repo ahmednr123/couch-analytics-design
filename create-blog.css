@@ -1,0 +1,11 @@
+.create-blog-grid {
+    display: grid;
+    grid-template-columns: 60% calc(40% - 4px);
+    grid-gap: 4px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-family: 'satoshi-bold';
+    font-weight: bold;
+}

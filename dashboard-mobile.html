@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard - Couch Analytics</title>
+    <link rel="stylesheet" href="./app.css" />
+    <link rel="stylesheet" href="./dashboard.css" />
+</head>
+<body>
+    
+    <header>
+        <div class="nav-bar-left">
+            <div class="burger-container">
+                <div class="burger-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="4" y1="6" x2="20" y2="6" />
+                        <line x1="4" y1="12" x2="20" y2="12" />
+                        <line x1="4" y1="18" x2="20" y2="18" />
+                    </svg>
+                </div>
+                <div class="burger-close-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </div>
+            </div>
+            <div class="logo-container">
+                <img src="./images/logo.svg" />
+            </div>
+            <div class="nav-container">
+                <ul class="nav-bar">
+                    <li class="selected">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <polyline points="5 12 3 12 12 3 21 12 19 12" />
+                            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                            <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                        </svg>
+                        <span>Home</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-asana" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="12" cy="7" r="3" />
+                            <circle cx="17" cy="16" r="3" />
+                            <circle cx="7" cy="16" r="3" />
+                        </svg>
+                        <span>Projects</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="15" height="15" viewBox="0 0 24 24" stroke-width="2" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-analytics" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                            <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                            <line x1="9" y1="17" x2="9" y2="12" />
+                            <line x1="12" y1="17" x2="12" y2="16" />
+                            <line x1="15" y1="17" x2="15" y2="14" />
+                        </svg>
+                        <span>Datasets</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="15" height="15" viewBox="0 0 24 24" stroke-width="2" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-news" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11" />
+                            <line x1="8" y1="8" x2="12" y2="8" />
+                            <line x1="8" y1="12" x2="12" y2="12" />
+                            <line x1="8" y1="16" x2="12" y2="16" />
+                        </svg>
+                        <span>Blogs</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                        </svg>
+                        <span>Users</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="nav-bar-right">
+            <div class="feedback-btn">
+                <div class="feedback-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-report" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4" />
+                        <line x1="12" y1="8" x2="12" y2="11" />
+                        <line x1="12" y1="14" x2="12" y2="14.01" />
+                    </svg>
+                    <span>Feedback</span>
+                </div>
+            </div>
+            <div class="notification-container">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
+                    <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+                </svg>
+            </div>
+            <div class="profile">
+                <img src="./images/profile.jpeg" />
+            </div>
+        </div>
+    </header>
+
+    <div class="nav-bar-mobile">
+        <ul class="nav-bar">
+            <li class="selected">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <polyline points="5 12 3 12 12 3 21 12 19 12" />
+                    <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                    <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                </svg>
+                <span>Home</span>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-asana" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="12" cy="7" r="3" />
+                    <circle cx="17" cy="16" r="3" />
+                    <circle cx="7" cy="16" r="3" />
+                </svg>
+                <span>Projects</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="15" height="15" viewBox="0 0 24 24" stroke-width="2" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <polyline points="6 9 12 15 18 9" />
+                </svg>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-analytics" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <line x1="9" y1="17" x2="9" y2="12" />
+                    <line x1="12" y1="17" x2="12" y2="16" />
+                    <line x1="15" y1="17" x2="15" y2="14" />
+                </svg>
+                <span>Datasets</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="15" height="15" viewBox="0 0 24 24" stroke-width="2" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <polyline points="6 9 12 15 18 9" />
+                </svg>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-news" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11" />
+                    <line x1="8" y1="8" x2="12" y2="8" />
+                    <line x1="8" y1="12" x2="12" y2="12" />
+                    <line x1="8" y1="16" x2="12" y2="16" />
+                </svg>
+                <span>Blogs</span>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                </svg>
+                <span>Users</span>
+            </li>
+
+            <li>
+                <div class="feedback-btn" style="display: flex;">
+                    <div class="feedback-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-report" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4" />
+                            <line x1="12" y1="8" x2="12" y2="11" />
+                            <line x1="12" y1="14" x2="12" y2="14.01" />
+                        </svg>
+                        <span>Feedback</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="dashboard-container">
+        <div class="container-left">
+            <div class="card">
+                <div class="card-section">
+                    <div class="heading">Tagged</div>
+                    <div class="tagged-container">
+                        <div class="tagged-card">
+                            <div class="tagged-card-title"><a href="#">How to form a question?</a></div>
+                            <div class="tagged-card-type">Blog</div>
+                        </div>
+                        <div class="tagged-card">
+                            <div class="tagged-card-title"><a href="#">Swayamvar</a></div>
+                            <div class="tagged-card-type">Dataset</div>
+                        </div>
+                        <div class="tagged-card">
+                            <div class="tagged-card-title"><a href="#">Confidante</a></div>
+                            <div class="tagged-card-type">Dataset</div>
+                        </div>
+                        <div class="tagged-card">
+                            <div class="tagged-card-title"><a href="#">Bolly-woot!</a></div>
+                            <div class="tagged-card-type">Dataset</div>
+                        </div>
+                        <div class="tagged-card">
+                            <div class="tagged-card-title"><a href="#">Game design: Swayamvar</a></div>
+                            <div class="tagged-card-type">Blog</div>
+                        </div>
+                        <div class="tagged-card">
+                            <div class="tagged-card-title"><a href="#">How game design work in board games?</a></div>
+                            <div class="tagged-card-type">Blog</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-section" style="padding-bottom:0px">
+                    <div class="heading">Activity</div>
+                </div>
+                <div>
+                    <div class="activity">
+                        <div class="activity-user">
+                            <div class="activity-profile">
+                                <img src="./images/profile.jpeg" />
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <span><strong>Ahmed Noor</strong> commented on your <strong>I'm not a witch</strong> post.</span>
+                            <span class="activity-time">A few hours ago</span>
+                        </div>
+                    </div>
+                    <div class="activity">
+                        <div class="activity-user">
+                            <div class="activity-profile">
+                                <img src="./images/profile.jpeg" />
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <span><strong>Ahmed Noor</strong> added a question to <strong>Swayamvar</strong> dataset.</span>
+                            <span class="activity-time">Yesterday</span>
+                        </div>
+                    </div>
+                    <div class="activity">
+                        <div class="activity-user">
+                            <div class="activity-profile">
+                                <img src="./images/profile.jpeg" />
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <span><strong>Ahmed Noor</strong> commented on your <strong>I'm not a witch</strong> post.</span>
+                            <span class="activity-time">Yesterday</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-right">
+            <div class="card">
+                <div class="card-section">
+                    <div class="heading">Maximum Earnings</div>
+                    <div>&#8377; 255*</div>
+                </div>
+
+                <table class="card-table">
+                    <thead>
+                        <tr>
+                            <th>Contributed to</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Swayamvar</td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td>Confidante</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>Blogs</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="card-section">
+                    <div class="heading">Royalties</div>
+                    <div>User impressions: <b>200</b></div>
+                    <input type="range" class="slider"/>
+                    <div>&#8377; 200*</div>
+                </div>
+
+                <div class="card-section card-footer">
+                    *Only for data that is used in production
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <span>Copyright © 2022 Couch Games. All rights reserved.</span>
+            <span>v1.0.0-beta16</span>
+        </div>
+        <div>
+            <span>Documentation</span>
+            <span>License</span>
+            <span>Source code</span>
+            <span>Sponser</span>
+        </div>
+    </footer>
+
+</body>
+</html>

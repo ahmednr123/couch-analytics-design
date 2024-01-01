@@ -1,0 +1,168 @@
+.dashboard-container {
+    width: 100%;
+    margin: 10px 0px;
+    float:left;
+}
+
+.dashboard-container > * {
+    float:left;
+}
+
+.container-left {
+    display: flex;
+    width: calc(60% - 10px);
+    margin-right: 10px;
+    flex-direction: column;
+}
+
+.container-left > div, .container-right > div {
+    margin-bottom: 10px;
+}
+
+.container-right {
+    display: flex;
+    width: 40%;
+}
+
+.heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card {
+    padding: 0px;
+    border: 1px solid lightgray;
+    width: 100%;
+}
+
+.card-section {
+    padding: 20px;
+}
+
+table.card-table {
+    width: 100%;
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+table.card-table th {
+    font-size: 11px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+    background: lavender;
+    padding: 10px;
+}
+
+table.card-table td {
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+}
+
+.card-section > .slider {
+    width: 100%;
+    margin: 10px 0px;   
+}
+
+.tagged-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tagged-container > .tagged-card {
+    padding: 5px;
+    width: calc(25% - 10px);
+}
+
+.tagged-card-type {
+    display: inline-flex;
+    padding:3px 5px;
+    font-size: 12px;
+    background: lavender;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.tagged-card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tagged-card a {
+    color: black;
+    text-decoration: none;
+}
+
+.tagged-card a:visited {
+    color: black;
+}
+
+.tagged-card a:hover, .tagged-card a:active {
+    text-decoration: underline;
+}
+
+.activity {
+    padding: 20px;
+    display: flex;
+}
+
+.activity:hover {
+    background: lavender;
+    cursor: pointer;
+}
+
+.activity-user {
+    margin-right: 20px;
+}
+
+.activity-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-profile {
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.activity-profile > img {
+    width: 35px;
+}
+
+.activity-time {
+    color: gray;
+}
+
+.card-section.card-footer {
+    border-top: 1px solid lightgray;
+    background: #f3f3f3;
+    color: gray;
+}
+
+@media (max-width: 800px) {
+    .tagged-container > .tagged-card {
+        padding: 5px;
+        width: calc(33% - 10px);
+    }
+}
+
+@media (max-width: 600px) {
+    .tagged-container > .tagged-card {
+        padding: 5px;
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 500px) {
+    .dashboard-container > * {
+        width: 100%;
+    }
+}

@@ -1,0 +1,105 @@
+.container {
+    margin-top: 10px;
+}
+
+.left-container {
+    float: left;
+    width: 300px;
+}
+
+.right-container {
+    float: left;
+    margin-left: 10px;
+    width: calc(100% - 310px);
+    column-count: 3;
+    column-gap: 10px;
+}
+
+.card {
+    width: 100%;
+    border: 1px solid lightgray;
+    margin-bottom: 10px;
+}
+
+.card-section {
+    padding: 20px;
+}
+
+.form-section {
+    margin-bottom: 10px;
+}
+.sw-dataset {
+    margin: 0 0 10px;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid lightgray;
+}
+
+.sw-data:hover {
+    background-color: lavender;
+}
+
+.sw-data {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sw-question {
+    font-weight: bold;
+    font-family: 'satoshi-bold';
+}
+
+.sw-options {
+    padding: 10px;
+}
+
+.sw-options > div::before {
+    content: '- ';
+}
+
+.dataset-interaction {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.dataset-interaction > div {
+    display: flex;
+    align-items: center;
+}
+
+.interaction {
+    display: flex;
+    align-items: center;
+}
+
+.interaction.selected > svg {
+    stroke: rgb(34, 91, 156);
+}
+
+.interaction > svg:hover {
+    stroke: rgb(34, 91, 156);
+    cursor: pointer;
+}
+
+.sw-dataset.red {
+    border-color: #df8a8a;
+}
+
+.sw-dataset.green {
+    border-color: rgb(117, 185, 117);
+}
+
+.data-action {
+    display: flex; 
+    align-items: center;
+    padding: 5px;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.data-action:hover {
+    background-color: lavender;
+}

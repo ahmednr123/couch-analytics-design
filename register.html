@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register - Couch Analytics</title>
+    <link rel="stylesheet" href="./app.css" />
+    <link rel="stylesheet" href="./login.css" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo-container">
+            <img src="./images/logo.svg" />
+        </div>
+        <div class="card">
+            <div class="card-section">
+                <div class="heading">Register to Beta Program</div>
+                <div class="form-section">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Full Name" />
+                </div>
+                <div class="form-section">
+                    <label>Nickname</label>
+                    <input type="text" placeholder="Nickname" />
+                </div>
+                <div class="form-section">
+                    <label>Gender</label>
+                    <select name="gender" id="gender">
+                        <option disabled selected value> -- select an option -- </option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="form-section">
+                    <label>Date of birth</label>
+                    <input type="date" />
+                </div>
+                <div class="form-section">
+                    <input type="checkbox" name="terms-and-conditions" />
+                    <label for="terms-and-conditions" style="font-weight: normal; font-family:'satoshi-regular'">I agree with the <a href="#">Terms and Conditions</a></label>
+                </div>
+                <div style="margin-top: 30px">
+                    <button class="full-button">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
